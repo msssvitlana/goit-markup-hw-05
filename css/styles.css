@@ -536,6 +536,14 @@ color: #f4f4fd;
         color: #fff;
     background-color: transparent;
    }
+     .send-form::placeholder {
+      font-weight: 400;
+        font-size: 12px;
+        line-height: 2;
+        letter-spacing: 0.04em;
+        color: #fff;
+
+     }
    .submit-btn {
     display: flex;
     justify-content: center;
@@ -639,7 +647,7 @@ color: #f4f4fd;
      color: #2e2f42;
      margin-bottom: 16px;
    }
-     .input-label {
+     .container-info {
       display: block;
       font-weight: 400;
         font-size: 12px;
@@ -711,9 +719,28 @@ color: #f4f4fd;
 .order-form-comment:focus {
   border-color: #4D5AE5;
 }
+.order-form-comment::placeholder {
+  font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+}
 .checkbox-wrapper {
-
+display: flex;
   margin-bottom: 24px;
+  align-items: center;
+}
+.check-box {
+  border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    background-color: transparent;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+   
+    
 }
 .agreement-checkbox {
   font-weight: 400;
@@ -730,6 +757,9 @@ color: #f4f4fd;
     color: #4d5ae5;
 }
 .check-vector {
+  position: absolute;
+  left: 24px;
+  top: 16px;
 width: 16px;
 height: 16px;
 border: 1px solid rgba(46, 47, 66, 0.4);
@@ -738,13 +768,13 @@ display: inline-flex;
 align-items: center;
 justify-content: center;
 fill: transparent;
-margin-right: 8px;
+
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.check-vector .check-box:checked  {
-background-color: #404bbf;
-border: none;
-fill: #F4F4FD;
+.check-vector .check-box:checked {
+  background-color: #404bbf;
+  border: none;
+  fill: #F4F4FD;
 }
 .send-info-btn {
   font-weight: 500;
