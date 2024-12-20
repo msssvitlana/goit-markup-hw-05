@@ -523,7 +523,7 @@ color: #f4f4fd;
     border: 1px solid #fff;
       border-radius: 4px;
       width: 264px;
-      min-height: 40px;
+      height: 40px;
       box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
      
       padding-left: 16px;
@@ -647,7 +647,9 @@ color: #f4f4fd;
      color: #2e2f42;
      margin-bottom: 16px;
    }
-     .container-info {
+
+   
+     .container-name {
       display: block;
       font-weight: 400;
         font-size: 12px;
