@@ -638,21 +638,77 @@
           </svg>
         </button>
         <p class="modal-name">Leave your contacts and we will call you back</p>
-        <ul class="input-list">
-          <li class="input-item">
-            <label class="input-label" for="name">Name</label>
-            <input class="info-input" required id="name" type="name" />
-          </li>
-          <li class="input-item">
-            <label class="input-label" for="phone">Phone</label>
-            <input class="info-input" required id="phone" type="name" />
-          </li>
-          <li class="input-item">
-            <label class="input-label" for="email">Email</label>
-            <input class="info-input" required id="email" type="name" />
-          </li>
-        </ul>
-        <textarea class="order-form-comment" name="comment" id=""></textarea>
+        <form>
+          <div class="order-form-wrapper">
+            <label class="input-label" for="user-name">Name</label>
+            <div>
+              <input
+                class="info-input"
+                required
+                name="user-name"
+                id="user-name"
+                type="name"
+              />
+              <svg class="info-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-person-black"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="order-form-wrapper">
+            <label class="input-label" for="user-phone">Phone</label>
+            <input
+              class="info-input"
+              required
+              name="user-phone"
+              id="user-phone"
+              type="phone"
+            />
+            <svg class="info-icon" width="18" height="24">
+              <use href="./images/icons.svg#icon-phone-black"></use>
+            </svg>
+          </div>
+          <div class="order-form-wrapper">
+            <label class="input-label" for="user-email">Email</label>
+            <input
+              class="info-input"
+              required
+              name="user-email"
+              id="user-email"
+              type="email"
+            />
+            <svg class="info-icon" width="18" height="24">
+              <use href="./images/icons.svg#icon-email-black"></use>
+            </svg>
+          </div>
+          <div class="comment-wrapper">
+            <label class="input-label" for="user-comment">Comment</label>
+            <textarea
+              class="order-form-comment"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <div class="checkbox-wrapper">
+            <input
+              class="check-box visually-hidden"
+              id="user-privacy"
+              value="true"
+              name="user-privacy"
+              type="checkbox"
+            />
+            <label class="agreement-checkbox" for="user-privacy">
+              <span class="check-vector"
+                ><svg class="vector-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-Vector"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="policy-link" href="">Privacy Policy</a>
+            </label>
+          </div>
+          <button class="send-info-btn" type="submit">Send</button>
+        </form>
       </div>
     </div>
   </body>
