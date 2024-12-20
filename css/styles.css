@@ -648,7 +648,7 @@ color: #f4f4fd;
      margin-bottom: 16px;
    }
 
-   
+
      .container-name {
       display: block;
       font-weight: 400;
@@ -773,7 +773,7 @@ fill: transparent;
 
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.check-vector .check-box:checked {
+.check-box:checked + .check-vector {
   background-color: #404bbf;
   border: none;
   fill: #F4F4FD;
